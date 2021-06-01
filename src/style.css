@@ -1,0 +1,270 @@
+html {
+    background-color: unset;
+    height: 100%;
+}
+
+body {
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background: #ccccb3;	
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    flex: 1 0 auto;
+}
+/* header Styles */
+.header {
+    background-color: #054a76;
+    color: #fff;
+    margin: 0;
+    padding: 0 12px;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.logo-text h1 {
+    font-size: 20px;
+
+}
+
+.user-info {
+    text-align: right;
+    font-size: 14px;
+}
+
+.user-info img {
+    margin-right: 10px;
+}
+
+.user-info .dropdown-menu {
+    min-width: 13rem;
+}
+
+.user-info .dropdown-trigger {
+    cursor: pointer;
+}
+
+.username {
+    color: #f3db0e;
+}
+
+/* product's table style */ 
+.table-header {
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.table-header .column {
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.product-row {
+    border-bottom:1px solid #dddddd;
+}
+
+.product-image {
+    padding-left: 20px;
+}
+
+.product-image img {
+    border: 1px solid #dddddd;
+    padding: 4px;
+}
+
+.product-title {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-title h1 {
+    font-size: 19px;
+    color: #083f79;
+    align-self: flex-end;
+}
+
+.product-title h2  {
+    font-size: 17px;
+    align-self: baseline;
+}
+
+.center-container {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+input.quantity {
+    border-radius: 8px;
+    font-size: 17px;
+    border: 1px solid #dddddd;
+    padding-left:12px;
+}
+input::-webkit-inner-spin-button {
+    opacity:1;
+}
+
+.mobile-table-heading {
+    display: none;
+}
+
+/* discount setion style */ 
+.checkout { 
+   padding-top: 3rem;
+   padding-left: 25px;
+}
+
+.discount h1 { 
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+
+.submit-form { 
+    text-align: right;
+    padding-right: 25px;
+}
+
+.submit-form .field.is-grouped {
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+
+.total { 
+    font-size: 29px;
+    font-weight: 600;
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+.is-link {
+    background-color: #0b507c !important;
+}
+.is-dark {
+    background-color: #3f3f3f !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* footer styling */ 
+.footer {
+    background-color: #181d22;
+    text-align: center;
+    color: #ffff;
+    font-size: 24px;
+    padding: 10px;  
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+/* media queries */
+/* mobile Breakpoint*/
+@media screen and (max-width: 768px) {
+    body {
+        background: #ffffff;
+        display: block;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .header {
+        margin: -0.75rem;
+    }
+
+    .logo-text h1 {
+        font-size: 25px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .user-info {
+        text-align: center;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .products-table .product-row {
+        margin-bottom: 30px;
+    }
+
+    .product-image {
+        text-align: center;
+    }
+
+    .product-image img {
+        width: 180px;
+    }
+
+    .product-title {
+        display: block;
+    }
+
+    .product-title h1 {
+        font-size: 22px;
+    }
+
+    input.quantity {
+        font-size: 25px;
+    }
+
+    .center-container {
+        font-size: 19px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-table-heading {
+        display: inline;
+    } 
+    
+    .discount {
+        text-align: center;
+    }
+
+    .submit-form {
+        text-align: center;
+    }
+
+    .discount .field.has-addons {
+        justify-content: center;
+    }
+
+    .submit-form .field.is-grouped {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .submit-form .is-dark {
+        margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+    }
+}
+
+/* tablet breakpoint */
+@media screen and (min-width: 706px) and (max-width: 769px) {
+    .product-image {
+        float: left;
+    }
+}
